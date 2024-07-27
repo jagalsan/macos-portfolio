@@ -1,6 +1,6 @@
 // Shortcut.tsx
 import React from "react";
-import styles from "./Shortcut.module.scss";
+import styles from "./ShortCut.module.scss";
 import { Icon } from "@/data/types/icon";
 import Image from "next/image";
 

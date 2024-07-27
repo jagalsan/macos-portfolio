@@ -1,0 +1,15 @@
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin: 0 auto;
+    padding: 0;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        padding: 0 24px;
+        gap: 42px;
+        justify-content: center;
+    }
+}

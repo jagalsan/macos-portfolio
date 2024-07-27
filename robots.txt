@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://albertogalera.vercel.app/sitemap.xml

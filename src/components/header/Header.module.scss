@@ -1,0 +1,170 @@
+.headerContainer {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DEDEDE;
+    width: 100%;
+    box-shadow: 0 1px 2px black;
+    position: relative;
+
+    .headerNavigation {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        height: 100%;
+        align-items: center;
+        padding-left: 20px;
+
+        @media (max-width: 768px) {
+            width: 26%;
+        }
+
+        .logoContainer {
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menuContainer {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            gap: 24px;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+
+            .menuItem {
+                position: relative;
+
+                .menuLink {
+                    text-decoration: none;
+                    color: black;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .subMenu {
+            position: absolute;
+            top: 26px;
+            width: 220px;
+            left: 0;
+            background-color: #DEE0E0;
+            box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.535);
+            padding: 10px;
+            z-index: 10;
+
+            p {
+                margin: 0 0 10px;
+                font-weight: bold;
+            }
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: #333;
+                padding: 5px 0;
+                cursor: pointer;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .separator3D {
+                width: 100%;
+                height: 1px;
+                position: relative;
+                background-color: #e0e0e0;
+                display: block;
+
+                &::before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                }
+
+                &::before {
+                    top: -1px;
+                    background-color: #fff;
+                    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+                }
+
+                &::after {
+                    bottom: -1px;
+                    background-color: #ccc;
+                    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+    }
+
+    .headerSystem {
+        width: 24%;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 20px;
+
+        @media (max-width: 768px) {
+            width: 76%;
+        }
+
+        .systemSeparator {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            padding: 3px 0;
+            width: 4px;
+            height: 100%;
+            background-color: transparent;
+            margin: 0 10px;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 1px 0 3px 1px rgba(0, 0, 0, 0.312);
+
+            .systemSeparatorItem {
+                width: 3px;
+                height: 3px;
+                display: block;
+                background-color: rgba(0, 0, 0, 0.312);
+            }
+        }
+
+        .systemFlex {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                color: black;
+                transition: all ease-in-out .2s;
+
+                &:hover {
+                    color: rgb(56, 56, 56);
+                }
+            }
+
+            .pageTitle {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 70px;
+            }
+        }
+    }
+}

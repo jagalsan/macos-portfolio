@@ -1,0 +1,35 @@
+.article {
+    color: var(--text-color);
+    max-width: 680px;
+
+    &Header {
+        .title {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38px;
+            letter-spacing: -0.014em;
+        }
+
+        .extract {
+            line-height: 24px;
+            margin-top: 8px;
+            margin-bottom: 24px;
+            font-weight: 400;
+            font-size: 18px;
+            color: var(--light-grey);
+        }
+    }
+
+    &Image {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    &Content {
+        line-height: 28px;
+        letter-spacing: -0.003em;
+        font-size: 18px;
+        margin-top: 16px;
+    }
+}

@@ -1,0 +1,49 @@
+.errorWrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &Container {
+        width: 400px;
+        height: fit-content;
+        background-color: #e0e0e0;
+        box-shadow: 3px 3px 0px 0px #000;
+        padding: 16px;
+        border: 2px solid #000;
+        z-index: 3;
+    }
+
+    &Title,
+    &Text,
+    &Description {
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 8px;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    &Title {
+        font-size: 18px;
+    }
+
+    .errorIcon {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .errorMessage {
+        text-align: center;
+    }
+
+    .restartButton {
+        margin-top: 16px;
+        padding: 8px;
+        background-color: #fff;
+        border: 1px solid #000;
+        cursor: pointer;
+        box-shadow: 2px 2px 0px 0px #000;
+    }
+}

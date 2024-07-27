@@ -1,0 +1,31 @@
+.loadingScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+  
+    .progressBar {
+      width: 40%;
+      background-color: #333;
+      margin-top: 20px;
+      height: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  
+    .progress {
+      height: 100%;
+      background-color: #82cab8;
+      transition : width 3s ease;
+    }
+  
+    .message {
+      margin-top: 20px;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+  

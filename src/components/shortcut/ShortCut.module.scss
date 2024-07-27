@@ -1,0 +1,23 @@
+// Shortcut.module.scss
+.shortcut {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+
+    &Icon {
+        margin-bottom: 4px;
+    }
+
+    &Title {
+        font-size: 14px;
+        color: #333;
+        background-color: #BDC6D7;
+        width: fit-content;
+        padding: 2px 4px;
+    }
+}

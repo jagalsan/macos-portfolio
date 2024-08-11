@@ -31,11 +31,15 @@ export const fetchApi = async <T>(
             }),
         };
 
+        console.log(url);
+
+
         const response = await fetch(url, {
             method,
             headers,
             body: body ? JSON.stringify(body) : null,
         });
+
 
         if (!response.ok) {
             const errorBody = await response.text();
@@ -45,6 +49,8 @@ export const fetchApi = async <T>(
         const data = await response.json();
         return data as T;
       } catch (error) {
+        console.error(error);
+
         throw error;
       }
 };

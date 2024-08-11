@@ -1,9 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental: {
-      appDir: true, 
+  experimental: {
+      appDir: true,
       serverActions: true,
-    },
-  };
-  
-  module.exports = nextConfig;
+  },
+  async rewrites() {
+      return [
+          {
+              source: '/:path*',
+              destination: 'http://34.175.149.159:3000/:path*',
+          },
+      ];
+  },
+};
+
+module.exports = nextConfig;

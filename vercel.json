@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+      {
+        "source": "/:path*",
+        "destination": "http://34.175.149.159:3000/:path*"
+      }
+    ],
+    "redirects": [],
+    "headers": [],
+    "cleanUrls": true
+  }
+  
